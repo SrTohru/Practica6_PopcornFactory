@@ -6,37 +6,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/babygray"
+    android:background="@color/black"
     tools:context=".CatalogActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="vertical">
 
         <TextView
+            android:id="@+id/movie_title_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/mustard"
-            android:text="@string/movies"
-            android:textAllCaps="true"
-            android:fontFamily="sans-serif-condensed"
-            android:textStyle="bold"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:textSize="20sp"
-            />
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_gravity="center"
+            android:text="Título película"
+            android:layout_marginStart="10dp"/>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="@color/mustard"
             android:layout_marginHorizontal="15dp"
-            android:layout_marginTop="33dp"
-            />
-
+            android:layout_marginTop="10dp"/>
     </LinearLayout>
+
 
     <GridView
         android:id="@+id/movies_catalog"
